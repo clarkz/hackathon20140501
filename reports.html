@@ -26,17 +26,58 @@
 
 </head>
 <body>
+	<script>
+		$(document).ready(function(){
+			$('.dv-report').each(function(idx, ele){
+				$(ele).children('.report-button').click(function(){
+					var selected = $(this);
+					var sign = selected.children('.open-sign').text();
+					if(sign == '+'){
+						selected.siblings('.report-content').show();
+						selected.children('.open-sign').text('-');
+					}else{
+						selected.siblings('.report-content').hide();
+						selected.children('.open-sign').text('+');
+					}
+					return false;
+				});
+			});
+		})
+	</script>
 	<div id="page-header">
 	</div>
 	<a id="lnk-open-stream" class="open-eye-button" href="#">Streams</a>
-	<div id="dv-map">
-	</div>
 	<div id="dv-search">
 		<input type="text" name="address" class="blur-border" value="Enter Address"/>
 		<a id="lnk-search" class="reversed-button" href="#">Submit</a>
 	</div>
-	<div id="dv-porp01" class="property-item-selected clickable"></div>
-	<div id="dv-porp02" class="property-item clickable"></div>
-	<div id="dv-porp03" class="property-item clickable"></div>
+	<div id="property-summery">
+	</div>
+	<div id="dv-property-report" class="dv-report">
+		<div class="report-button clickable">
+			<div class="open-sign">-</div>
+			<span>Property Report</span>
+		</div>
+		<div class="report-content">
+		</div>
+	</div>
+	<div id="dv-community-report" class="dv-report">
+		<div class="report-button clickable">
+			<div class="open-sign">+</div>
+			<span>Community Report</span>
+		</div>
+		<div class="report-content">
+			some information about community goes here
+		</div>
+	</div>
+	<div id="dv-school-report" class="dv-report">
+		<div class="report-button clickable">
+			<div class="open-sign">+</div>
+			<span>School Report</span>
+		</div>
+		<div class="report-content">
+			School information
+		</div>
+	</div>
 </body>
 </html>

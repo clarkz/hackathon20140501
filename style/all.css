@@ -96,3 +96,46 @@
 .clickable{
 	cursor:pointer;
 }
+
+#property-summery{
+	background-image: url(../images/page-1.png);
+    background-repeat: no-repeat;
+    background-position: 0 -76px;
+	background-size: 324px 1300px;
+	width:100%;
+	height:360px;
+}
+
+.report-button{
+	text-decoration:none;
+	border-style:solid;
+	border-width:2px;
+	border-color:#888888;
+	border-radius:5px;
+	padding:5px;
+	color:#008888;
+	margin:10px;
+}
+
+.report-button .open-sign{
+	float:right;
+}
+
+#dv-property-report .report-content{
+	background-image: url(../images/page-1.png);
+    background-repeat: no-repeat;
+    background-position: 0 -480px;
+	background-size: 324px 1300px;
+	width:100%;
+	height:725px;
+}
+
+#dv-community-report .report-content{
+	width:100%;
+	display:none;
+}
+
+#dv-school-report .report-content{
+	width:100%;
+	display:none;
+}
