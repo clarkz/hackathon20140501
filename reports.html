@@ -27,6 +27,21 @@
 </head>
 <body>
 	<script>
+		function loadReportImage(fn){
+			if(!fn) return '';
+			return '<img width="100%" src="images/reports/propertyReport/' + fn + '"/>';
+		}
+		
+		function getReportHtml(reportimglist){
+			var htmlPropReport = '';
+			
+			for(var i = 0; i < reportimglist.length; i++){
+				htmlPropReport += loadReportImage(reportimglist[i]);
+			}
+			
+			return htmlPropReport;
+		}
+		
 		$(document).ready(function(){
 			$('.dv-report').each(function(idx, ele){
 				$(ele).children('.report-button').click(function(){
@@ -56,6 +71,14 @@
 				location.href = 'livestream.html';
 				return false;
 			});
+			
+			var rptlist = ["rp001.png", "rp002.png", "rp003.png", "rp004.jpeg", "rp005.png", "rp006.png", "rp007.png", "rp008.png", "rp009.png", "rp010.png", "rp011.png", ""];
+			
+			$('#dv-property-report .report-content').html(getReportHtml(rptlist));
+
+			$('#dv-community-report .report-content').html(getReportHtml(["rp201.png", "rp202.png", "rp203.png", "rp203.png"]));
+
+			$('#dv-school-report .report-content').html(getReportHtml(["rp101.png", "rp102.png"]));
 		})
 	</script>
 	<div id="page-header">
