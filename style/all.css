@@ -106,6 +106,21 @@
 	height:360px;
 }
 
+.button-panel{
+	position:absolute;
+	background-color:#ffffff;
+	top:330px;
+	left:220px;
+	width:100px;
+	height:100px;
+}
+
+.button-panel a{
+	display:block;
+	font-size:13px;
+	margin:15px 0 0 0;
+}
+
 .report-button{
 	text-decoration:none;
 	border-style:solid;

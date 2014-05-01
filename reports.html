@@ -42,6 +42,15 @@
 					return false;
 				});
 			});
+			
+			$('#lnk-toggle-watch').click(function(){
+				if($(this).text() == 'Watch'){
+					$(this).text('Stop');
+				}else{
+					$(this).text('Watch');
+				}
+				return false;
+			});
 		})
 	</script>
 	<div id="page-header">
@@ -52,6 +61,10 @@
 		<a id="lnk-search" class="reversed-button" href="#">Submit</a>
 	</div>
 	<div id="property-summery">
+	</div>
+	<div class="button-panel">
+		<a id="lnk-toggle-watch" class="open-eye-button" href="#">Watch</a>
+		<a id="lnk-contact-agent" class="button" href="#">Contact Agent</a>
 	</div>
 	<div id="dv-property-report" class="dv-report">
 		<div class="report-button clickable">
