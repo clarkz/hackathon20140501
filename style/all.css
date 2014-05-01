@@ -25,6 +25,20 @@
 	color:#008888;
 }
 
+.dropdown-button{
+	background-image: url(../images/asset.png);
+    background-repeat: no-repeat;
+    background-position: 50px -115px;
+	text-decoration:none;
+	border-style:solid;
+	border-width:1px;
+	border-color:#008888;
+	border-radius:5px;
+	padding:5px 35px 5px 5px;
+	color:#008888;
+	font-size:13px;
+}
+
 .open-eye-button{
 	background-image: url(../images/asset.png);
     background-repeat: no-repeat;
@@ -118,7 +132,7 @@
 .button-panel a{
 	display:block;
 	font-size:13px;
-	margin:15px 0 0 0;
+	margin:5px 0 0 0;
 }
 
 .report-button{
@@ -153,4 +167,39 @@
 #dv-school-report .report-content{
 	width:100%;
 	display:none;
+}
+
+#dv-filters{
+	margin:10px;
+}
+
+#dv-filters span{
+	color:#008888;
+	font-weight:bold;
+}
+
+.dropdown-button-ctrl{
+	display:inline-block;
+}
+
+.dropdown-values{
+	position:absolute;
+	display:none;
+	background-color:white;
+	border-style:solid;
+	border-width:1px;
+	border-color:#008888;
+}
+
+.dropdown-values ul{
+	list-style-type: none;
+	margin:5px;
+	padding:0;
+}
+
+.dropdown-values li{
+	padding-left: 5px;
+	color:#008888;
+	font-size: 12px;
+	cursor:pointer;
 }
