@@ -58,11 +58,14 @@
 				});
 			});
 			
+			$('#lnk-view-stream').hide();
 			$('#lnk-toggle-watch').click(function(){
 				if($(this).text() == 'Watch'){
 					$(this).text('Stop');
+					$('#lnk-view-stream').show();
 				}else{
 					$(this).text('Watch');
+					$('#lnk-view-stream').hide();
 				}
 				return false;
 			});
