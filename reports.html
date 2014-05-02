@@ -84,13 +84,15 @@
 
 //			$('#dv-detail-walkscore .report-content').html(getReportHtml([]));
 			
-			var rptlist = ["rp301.png", "property_details.png", "rp001.png", "rp002.png|Map Overview", "rp003.png|Zip Code View", "rp004.jpeg|Overhead View", "rp005.png|Birds-eye View", "rp006.png|Public Record", "rp007.png", "rp008.png", "assessed_value_history.png", "avm.png", "taxes_paid_history.png", "homes_near_249_maskel_road.png", "agent_attrition.png", "lead_form.png", "RDCopen house.png", "RDCproperty history.png", "RDCproperty taxes.png"];
+			var rptlist = ["rp301.png", "property_details.png", "rp001.png", "rp002.png|Map Overview", "rp003.png|Zip Code View", "rp004.jpeg|Overhead View", "rp005.png|Birds-eye View", "rp006.png|Public Record", "rp007.png", "rp008.png", "assessed_value_history.png", "avm.png", "taxes_paid_history.png", "homes_near_249_maskel_road.png", "RDCopen house.png", "RDCproperty history.png", "RDCproperty taxes.png"];
 			
 			$('#dv-property-report .report-content').html(getReportHtml(rptlist));
 
 			$('#dv-community-report .report-content').html(getReportHtml(["rp201.png", "rp202.png", "rp203.png", "rp203.png"]));
 
 			$('#dv-school-report .report-content').html(getReportHtml(["rp101.png", "rp102.png", "rp103.png"]));
+
+			$('#dv-contact-agent .report-content').html(getReportHtml(["agent_attrition.png", "lead_form.png"]));
 		})
 	</script>
 	<div id="page-header">
@@ -112,9 +114,17 @@
 		<a id="lnk-view-stream" class="button" href="#">View Stream</a>
 		<a id="lnk-contact-agent" class="button" href="#">Contact Agent</a>
 	</div>
-	<div id="dv-property-report" class="dv-report">
+	<div id="dv-contact-agent" class="dv-report">
 		<div class="report-button clickable">
 			<div class="open-sign">-</div>
+			<span>Contact Agent</span>
+		</div>
+		<div class="report-content">
+		</div>
+	</div>
+	<div id="dv-property-report" class="dv-report">
+		<div class="report-button clickable">
+			<div class="open-sign">+</div>
 			<span>Property Report</span>
 		</div>
 		<div class="report-content">

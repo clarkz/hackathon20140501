@@ -217,8 +217,13 @@
 	display:block;
 }
 
+#dv-contact-agent .report-content{
+	width:100%;
+}
+
 #dv-property-report .report-content{
 	width:100%;
+	display:none;
 }
 
 #dv-community-report .report-content{
@@ -277,7 +282,7 @@
 .open-eye-button-small{
 	background-image: url(../images/asset.png);
     background-repeat: no-repeat;
-    background-position: -126px -70px;
+    background-position: -126px -69px;
 	text-decoration:none;
 	border-style:solid;
 	border-width:1px;
@@ -289,7 +294,7 @@
 }
 
 a.stream-off{
-    background-position: -265px -71px;
+    background-position: -265px -69px;
 	padding: 5px 15px 5px 30px;
 }
 
