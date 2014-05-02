@@ -49,8 +49,15 @@
 			}
 			return false;
 		});
+		var showNoti = false;
 		$('#dv-map').click(function(){
-			$('#dv-notification').show();
+			if(!showNoti){
+				showNoti = true;
+				$('#dv-notification').show();
+			}else{
+				showNoti = false;
+				$('#dv-notification').hide();
+			}
 			return false;
 		});
 		$('#dv-notification').click(function(){
