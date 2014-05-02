@@ -68,9 +68,11 @@
 				if(val == 'Stream'){
 					cntctrl.html('Live Stream');
 					cntctrl.removeClass("stream-off");
+					$("#lnk-view-stream").show();
 				}else{
 					cntctrl.html('Stream');
 					cntctrl.addClass("stream-off");
+					$("#lnk-view-stream").hide();
 				}
 				return false;
 			});
@@ -107,7 +109,7 @@
 	</div>
 	<div class="button-panel">
 		<a id="lnk-toggle-watch" class="open-eye-button-small stream-off" href="#">Stream</a>
-		<a id="lnk-view-stream" class="button" href="#">Live Stream</a>
+		<a id="lnk-view-stream" class="button" href="#">View Stream</a>
 		<a id="lnk-contact-agent" class="button" href="#">Contact Agent</a>
 	</div>
 	<div id="dv-property-report" class="dv-report">

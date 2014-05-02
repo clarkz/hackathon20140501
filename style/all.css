@@ -355,3 +355,11 @@ a.watch-stream, a.open-detail, a.remove-stream, a.update-stream{
 	top:14px;
 	color:red;
 }
+
+#lnk-toggle-watch{
+    background-position: -126px -68px;
+}
+
+#lnk-toggle-watch.stream-off{
+    background-position: -265px -69px;
+}
