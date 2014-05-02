@@ -27,16 +27,19 @@
 </head>
 <body>
 	<script>
-		function loadReportImage(fn){
+		function loadReportImage(fn, title){
 			if(!fn) return '';
-			return '<img width="100%" src="images/reports/propertyReport/' + fn + '"/>';
+			var titlehtml = '';
+			if(title) titlehtml += '<p class="info-image-title">' + title + '</p>';
+			return titlehtml + '<img class="info-image" width="96%" src="images/reports/propertyReport/' + fn + '"/>';
 		}
 		
 		function getReportHtml(reportimglist){
 			var htmlPropReport = '';
 			
 			for(var i = 0; i < reportimglist.length; i++){
-				htmlPropReport += loadReportImage(reportimglist[i]);
+				var imginfo = reportimglist[i].split('|');
+				htmlPropReport += loadReportImage(imginfo[0], imginfo[1]);
 			}
 			
 			return htmlPropReport;
@@ -74,24 +77,31 @@
 				location.href = 'livestream.html';
 				return false;
 			});
+
+			$('#dv-detail-walkscore .report-content').html(getReportHtml(["rp301.png"]));
 			
-			var rptlist = ["rp001.png", "rp002.png", "rp003.png", "rp004.jpeg", "rp005.png", "rp006.png", "rp007.png", "rp008.png", "rp009.png", "rp010.png", "rp011.png", ""];
+			var rptlist = ["rp001.png", "rp002.png|Map Overview", "rp003.png|Zip Code View", "rp004.jpeg|Overhead View", "rp005.png|Birds-eye View", "rp006.png", "rp007.png", "rp008.png", "rp009.png", "rp010.png", "rp011.png", ""];
 			
 			$('#dv-property-report .report-content').html(getReportHtml(rptlist));
 
 			$('#dv-community-report .report-content').html(getReportHtml(["rp201.png", "rp202.png", "rp203.png", "rp203.png"]));
 
-			$('#dv-school-report .report-content').html(getReportHtml(["rp101.png", "rp102.png"]));
+			$('#dv-school-report .report-content').html(getReportHtml(["rp101.png", "rp102.png", "rp103.png"]));
 		})
 	</script>
 	<div id="page-header">
 	</div>
+	<a id="lnk-open-map" class="open-map-button" href="content.html">Map</a>
 	<a id="lnk-open-stream" class="open-eye-button" href="streams.html">Streams</a>
 	<div id="dv-search">
 		<input type="text" name="address" class="blur-border" value="Enter Address"/>
 		<a id="lnk-search" class="reversed-button" href="#">Submit</a>
 	</div>
 	<div id="property-summery">
+	</div>
+	<div id="dv-detail-walkscore" class="dv-report">
+		<div class="report-content">
+		</div>
 	</div>
 	<div class="button-panel">
 		<a id="lnk-toggle-watch" class="open-eye-button" href="#">Watch</a>
@@ -112,7 +122,6 @@
 			<span>Community Report</span>
 		</div>
 		<div class="report-content">
-			some information about community goes here
 		</div>
 	</div>
 	<div id="dv-school-report" class="dv-report">
@@ -121,7 +130,6 @@
 			<span>School Report</span>
 		</div>
 		<div class="report-content">
-			School information
 		</div>
 	</div>
 </body>

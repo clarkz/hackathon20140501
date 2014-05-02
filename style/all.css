@@ -10,9 +10,17 @@
 
 #lnk-open-stream{
 	position:absolute;
-	right:10px;
+	right:6px;
 	top:7px;
 	display:block;
+	font-size:12px;
+}
+
+#lnk-open-map{
+	position:absolute;
+	top:7px;
+	font-size:12px;
+	left:162px;
 }
 
 .button{
@@ -53,8 +61,21 @@
 	color:#008888;
 }
 
+.open-map-button{
+	background-image: url(../images/asset.png);
+    background-repeat: no-repeat;
+    background-position: -183px -112px;
+	text-decoration:none;
+	border-style:solid;
+	border-width:1px;
+	border-color:#008888;
+	border-radius:5px;
+	padding:5px 5px 5px 30px;
+	color:#008888;
+}
+
 #dv-map{
-	background-image: url(../images/page-0.png);
+	background-image: url(../images/page-2.jpg);
     background-repeat: no-repeat;
     background-position: 0 -49px;
 	background-size: 324px 1300px;
@@ -91,7 +112,7 @@
 }
 
 .property-item{
-	background-image: url(../images/page-0.png);
+	background-image: url(../images/page-0.jpg);
     background-repeat: no-repeat;
     background-position: 0 -545px;
 	background-size: 324px 1300px;
@@ -99,8 +120,26 @@
 	height:100px;
 }
 
+#dv-porp01{
+}
+
+#dv-porp02{
+}
+
+#dv-porp03{
+    background-position: 0 -645px;
+}
+
+#dv-porp04{
+    background-position: 0 -745px;
+}
+
+#dv-porp05{
+    background-position: 0 -845px;
+}
+
 .property-item-selected{
-	background-image: url(../images/page-0.png);
+	background-image: url(../images/page-0.jpg);
     background-repeat: no-repeat;
     background-position: 0 -445px;
 	background-size: 324px 1300px;
@@ -113,7 +152,7 @@
 }
 
 #property-summery{
-	background-image: url(../images/page-1.png);
+	background-image: url(../images/page-1.jpg);
     background-repeat: no-repeat;
     background-position: 0 -76px;
 	background-size: 324px 1300px;
@@ -202,4 +241,36 @@
 	color:#008888;
 	font-size: 12px;
 	cursor:pointer;
+}
+
+.info-image-title{
+	margin:15px 5px 5px 5px;
+}
+
+.info-image{
+	padding:5px;
+}
+
+.stream-item{
+	background-image: url(../images/page-3.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 -52px;
+	background-size: 324px 1300px;
+	width:100%;
+	height:100px;
+}
+
+#dv-stream01{
+}
+
+#dv-stream02{
+    background-position: 0 -152px;
+}
+
+#dv-stream03{
+    background-position: 0 -252px;
+}
+
+#dv-stream04{
+    background-position: 0 -352px;
 }
