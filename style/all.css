@@ -37,7 +37,7 @@
 .dropdown-button{
 	background-image: url(../images/asset.png);
     background-repeat: no-repeat;
-    background-position: 43px -115px;
+    background-position: 39px -115px;
 	text-decoration:none;
 	border-style:solid;
 	border-width:1px;
@@ -45,7 +45,7 @@
 	border-radius:5px;
 	padding:5px 20px 5px 5px;
 	color:#008888;
-	font-size:12px;
+	font-size:11px;
 }
 
 #lnk-change-radius{
@@ -53,12 +53,12 @@
 }
 
 #lnk-change-comparables{
-    background-position: 72px -115px;
+    background-position: 69px -115px;
 	width:71px;
 }
 
 #lnk-change-status{
-    background-position: 60px -115px;
+    background-position: 56px -115px;
 	width:56px;
 }
 
