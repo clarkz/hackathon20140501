@@ -317,7 +317,7 @@ a.stream-off{
     background-position: 0 -442px;
 }
 
-a.watch-stream, a.open-detail, a.remove-stream, a.update-stream{
+a.watch-stream, a.open-detail, a.remove-stream, a.update-stream, a.view-stream{
 	font-size:11px;
 	position:relative;
 	display:block;
@@ -340,9 +340,14 @@ a.watch-stream, a.open-detail, a.remove-stream, a.update-stream{
 	width:35px;
 }
 
-.stream-item .watch-stream, .stream-item .remove-stream, .stream-item .update-stream{
+.stream-item .watch-stream, .stream-item .remove-stream, .stream-item .update-stream, .stream-item .view-stream{
 	padding-top:5px;
 	padding-bottom:5px;
+}
+
+.view-stream{
+	width:70px;
+	top:4px;
 }
 
 .remove-stream{

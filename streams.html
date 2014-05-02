@@ -31,18 +31,6 @@
 			location.href = 'reports.html';
 			return false;
 		});
-		$('.watch-stream').click(function(){
-			var cntctrl = $(this);
-			var val = cntctrl.text();
-			if(val == 'Stream'){
-				cntctrl.html('Live Stream');
-				cntctrl.removeClass("stream-off");
-			}else{
-				cntctrl.html('Stream');
-				cntctrl.addClass("stream-off");
-			}
-			return false;
-		});
 	});
 	</script>
 	<div id="page-header">
@@ -50,22 +38,22 @@
 	<a id="lnk-open-map" class="open-map-button" href="content.html">Map</a>
 	<a id="lnk-open-stream" class="open-eye-button" href="streams.html">Streams</a>
 	<div id="dv-stream01" class="stream-item">
-		<a id="lnk-watch-stream-01" class="open-eye-button-small stream-off watch-stream" href="#">Stream</a>
+		<a id="lnk-watch-stream-01" class="button view-stream" href="livestream.html">View Stream</a>
 		<a id="lnk-delete-stream-01" class="button remove-stream" href="#">Remove</a>
 		<a id="lnk-update-stream-01" class="button update-stream" href="livestream.html">Updates 3</a>
 	</div>
 	<div id="dv-stream02" class="stream-item">
-		<a id="lnk-watch-stream-02" class="open-eye-button-small stream-off watch-stream" href="#">Stream</a>
+		<a id="lnk-watch-stream-02" class="button view-stream" href="livestream.html">View Stream</a>
 		<a id="lnk-delete-stream-02" class="button remove-stream" href="#">Remove</a>
 		<a id="lnk-update-stream-02" class="button update-stream" href="livestream.html">Updates 5</a>
 	</div>
 	<div id="dv-stream03" class="stream-item">
-		<a id="lnk-watch-stream-03" class="open-eye-button-small stream-off watch-stream" href="#">Stream</a>
+		<a id="lnk-watch-stream-03" class="button view-stream" href="livestream.html">View Stream</a>
 		<a id="lnk-delete-stream-03" class="button remove-stream" href="#">Remove</a>
 		<a id="lnk-update-stream-03" class="button update-stream" href="livestream.html">Updates 0</a>
 	</div>
 	<div id="dv-stream04" class="stream-item">
-		<a id="lnk-watch-stream-04" class="open-eye-button-small stream-off watch-stream" href="#">Stream</a>
+		<a id="lnk-watch-stream-04" class="button view-stream" href="livestream.html">View Stream</a>
 		<a id="lnk-delete-stream-04" class="button remove-stream" href="#">Remove</a>
 		<a id="lnk-update-stream-04" class="button update-stream" href="livestream.html">Updates 3</a>
 	</div>
