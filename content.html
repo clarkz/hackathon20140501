@@ -49,6 +49,14 @@
 			}
 			return false;
 		});
+		$('#dv-map').click(function(){
+			$('#dv-notification').show();
+			return false;
+		});
+		$('#dv-notification').click(function(){
+			location.href = "reports.html";
+			return false;
+		});
 	})
 	</script>
 	<div id="page-header">
@@ -79,6 +87,9 @@
 	<div id="dv-porp05" class="property-item">
 		<a id="lnk-open-detail-05" class="button open-detail" href="reports.html">View Report</a>
 		<a id="lnk-watch-stream-05" class="open-eye-button-small stream-off watch-stream" href="#">Stream</a>
+	</div>
+	<div id="dv-notification">
+		<img src="images/notification.png">
 	</div>
 </body>
 </html>

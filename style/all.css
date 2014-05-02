@@ -363,3 +363,15 @@ a.watch-stream, a.open-detail, a.remove-stream, a.update-stream{
 #lnk-toggle-watch.stream-off{
     background-position: -265px -69px;
 }
+
+#dv-notification{
+	position:absolute;
+	top:2px;
+	left:2px;
+	display:none;
+}
+
+#dv-notification img{
+	width: 96%;
+	height: auto;
+}
