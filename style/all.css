@@ -274,6 +274,25 @@
 	padding:5px;
 }
 
+.open-eye-button-small{
+	background-image: url(../images/asset.png);
+    background-repeat: no-repeat;
+    background-position: -126px -70px;
+	text-decoration:none;
+	border-style:solid;
+	border-width:1px;
+	border-color:#008888;
+	border-radius:5px;
+	padding:5px 25px 5px 20px;
+	color:#008888;
+	white-space:nowrap;
+}
+
+a.stream-off{
+    background-position: -265px -71px;
+	padding: 5px 15px 5px 30px;
+}
+
 .stream-item{
 	background-image: url(../images/page-3.jpg);
     background-repeat: no-repeat;
@@ -299,19 +318,16 @@
 }
 
 a.watch-stream, a.open-detail, a.remove-stream, a.update-stream{
-	font-size:12px;
+	font-size:11px;
 	position:relative;
 	display:block;
 	background-color:white;
-	padding-top:9px;
-	padding-bottom:8px;
 	left:228px;
 }
 
 .watch-stream{
-	top:16px;
+	top:20px;
 	width:35px;
-    background-position: 0 -66px;
 }
 
 .open-detail{
@@ -322,7 +338,6 @@ a.watch-stream, a.open-detail, a.remove-stream, a.update-stream{
 .stream-item .watch-stream{
 	top:4px;
 	width:35px;
-    background-position: 0 -69px;
 }
 
 .stream-item .watch-stream, .stream-item .remove-stream, .stream-item .update-stream{

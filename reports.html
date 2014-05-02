@@ -63,12 +63,14 @@
 			
 			$('#lnk-view-stream').hide();
 			$('#lnk-toggle-watch').click(function(){
-				if($(this).text() == 'Watch'){
-					$(this).text('Stop');
-					$('#lnk-view-stream').show();
+				var cntctrl = $(this);
+				var val = cntctrl.text();
+				if(val == 'Stream'){
+					cntctrl.html('Live Stream');
+					cntctrl.removeClass("stream-off");
 				}else{
-					$(this).text('Watch');
-					$('#lnk-view-stream').hide();
+					cntctrl.html('Stream');
+					cntctrl.addClass("stream-off");
 				}
 				return false;
 			});
@@ -104,7 +106,7 @@
 		</div>
 	</div>
 	<div class="button-panel">
-		<a id="lnk-toggle-watch" class="open-eye-button" href="#">Watch</a>
+		<a id="lnk-toggle-watch" class="open-eye-button-small stream-off" href="#">Stream</a>
 		<a id="lnk-view-stream" class="button" href="#">Live Stream</a>
 		<a id="lnk-contact-agent" class="button" href="#">Contact Agent</a>
 	</div>
