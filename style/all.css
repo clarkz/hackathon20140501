@@ -89,6 +89,15 @@
 }
 
 #dv-map{
+	background-image: url(../images/page-0.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 -49px;
+	background-size: 324px 1300px;
+	width:100%;
+	height:360px;
+}
+
+#dv-map-2{
 	background-image: url(../images/page-2.jpg);
     background-repeat: no-repeat;
     background-position: 0 -49px;
