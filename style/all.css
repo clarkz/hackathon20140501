@@ -37,15 +37,29 @@
 .dropdown-button{
 	background-image: url(../images/asset.png);
     background-repeat: no-repeat;
-    background-position: 50px -115px;
+    background-position: 43px -115px;
 	text-decoration:none;
 	border-style:solid;
 	border-width:1px;
 	border-color:#008888;
 	border-radius:5px;
-	padding:5px 35px 5px 5px;
+	padding:5px 20px 5px 5px;
 	color:#008888;
-	font-size:13px;
+	font-size:12px;
+}
+
+#lnk-change-radius{
+	width:38px;
+}
+
+#lnk-change-comparables{
+    background-position: 72px -115px;
+	width:71px;
+}
+
+#lnk-change-status{
+    background-position: 60px -115px;
+	width:56px;
 }
 
 .open-eye-button{
@@ -257,20 +271,63 @@
     background-position: 0 -52px;
 	background-size: 324px 1300px;
 	width:100%;
-	height:100px;
+	height:130px;
 }
 
 #dv-stream01{
 }
 
 #dv-stream02{
-    background-position: 0 -152px;
+    background-position: 0 -182px;
 }
 
 #dv-stream03{
-    background-position: 0 -252px;
+    background-position: 0 -312px;
 }
 
 #dv-stream04{
-    background-position: 0 -352px;
+    background-position: 0 -442px;
+}
+
+a.watch-stream, a.open-detail, a.remove-stream, a.update-stream{
+	font-size:12px;
+	position:relative;
+	display:block;
+	background-color:white;
+	padding-top:9px;
+	padding-bottom:8px;
+	left:228px;
+}
+
+.watch-stream{
+	top:16px;
+	width:35px;
+    background-position: 0 -66px;
+}
+
+.open-detail{
+	width:70px;
+	top:12px;
+}
+
+.stream-item .watch-stream{
+	top:4px;
+	width:35px;
+    background-position: 0 -69px;
+}
+
+.stream-item .watch-stream, .stream-item .remove-stream, .stream-item .update-stream{
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.remove-stream{
+	width:70px;
+	top:9px;
+}
+
+.update-stream{
+	width:70px;
+	top:14px;
+	color:red;
 }

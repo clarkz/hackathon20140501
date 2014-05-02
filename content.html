@@ -32,6 +32,17 @@
 			location.href = 'reports.html';
 			return false;
 		});
+		
+		$('.watch-stream').click(function(){
+			var cntctrl = $(this);
+			var val = cntctrl.text();
+			if(val == 'Watch'){
+				cntctrl.html('Stop');
+			}else{
+				cntctrl.html('Watch');
+			}
+			return false;
+		});
 	})
 	</script>
 	<div id="page-header">
@@ -43,10 +54,25 @@
 		<input type="text" name="address" class="blur-border" value="Enter Address"/>
 		<a id="lnk-search" class="reversed-button" href="#">Submit</a>
 	</div>
-	<div id="dv-porp01" class="property-item-selected clickable"></div>
-	<div id="dv-porp02" class="property-item clickable"></div>
-	<div id="dv-porp03" class="property-item clickable"></div>
-	<div id="dv-porp04" class="property-item clickable"></div>
-	<div id="dv-porp05" class="property-item clickable"></div>
+	<div id="dv-porp01" class="property-item-selected">
+		<a id="lnk-open-detail-01" class="button open-detail" href="reports.html">Details</a>
+		<a id="lnk-watch-stream-01" class="open-eye-button watch-stream" href="#">Watch</a>
+	</div>
+	<div id="dv-porp02" class="property-item">
+		<a id="lnk-open-detail-02" class="button open-detail" href="reports.html">Details</a>
+		<a id="lnk-watch-stream-02" class="open-eye-button watch-stream" href="#">Watch</a>
+	</div>
+	<div id="dv-porp03" class="property-item">
+		<a id="lnk-open-detail-03" class="button open-detail" href="reports.html">Details</a>
+		<a id="lnk-watch-stream-03" class="open-eye-button watch-stream" href="#">Watch</a>
+	</div>
+	<div id="dv-porp04" class="property-item">
+		<a id="lnk-open-detail-04" class="button open-detail" href="reports.html">Details</a>
+		<a id="lnk-watch-stream-04" class="open-eye-button watch-stream" href="#">Watch</a>
+	</div>
+	<div id="dv-porp05" class="property-item">
+		<a id="lnk-open-detail-05" class="button open-detail" href="reports.html">Details</a>
+		<a id="lnk-watch-stream-05" class="open-eye-button watch-stream" href="#">Watch</a>
+	</div>
 </body>
 </html>
